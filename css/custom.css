@@ -44,11 +44,16 @@ p {
 }
 .date {
     font-size: 42px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 .place {
-    margin-top: 40px;
-    margin-bottom: 40px;    
+    margin-top: 20px;
+    margin-bottom: 60px;    
+}
+.storyline {
+    font-size: 19px;
+    line-height: 30px;
+    margin-bottom: 80px; 
 }
 /* Globe Illustration */
 .globe {
