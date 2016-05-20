@@ -7,8 +7,8 @@ body {
 .menu-wrapper li {
     display: inline-block;
     float: right;
-    margin-right: 50px;
-    margin-top: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
 }
 /* Typefaces Styles */
 h1 {
@@ -44,7 +44,7 @@ p {
 }
 .date {
     font-size: 42px;
-    padding-top: 300px;
+    margin-top: 100px;
 }
 
 /* Globe Illustration */
@@ -55,5 +55,38 @@ p {
 .title {
     margin: 0 auto;
 }
+/* Frame */
+html:before,html:after,body:before,body:after{
+    content:"";
+    background:#fff;
+    position:fixed;
+    display:block;
+    z-index:5;
+}
+html:before{
+    height:20px;
+    left:0;
+    right:0;
+    top:0;
+}
+html:after{
+    width:20px;
+    top:0;
+    right:0;
+    bottom:0;
+}
+body:before{
+    height:20px;
+    right:0;
+    bottom:0;
+    left:0;
+}
+body:after{
+    width:20px;
+    top:0;
+    bottom:0;
+    left:0;
+}
+
 
 
