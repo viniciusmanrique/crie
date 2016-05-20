@@ -2,30 +2,24 @@
 body {
     background-color: rgb(237,237,237);
 }
+/* Menu Nav */
+.menu-wrapper ul,
+.menu-wrapper li {
+    display: inline-block;
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+}
 /* Typefaces Styles */
-.title-line01 {
-    font-family: "Roboto", font-weight: 700;
-    font-size: 36px;
-    color: #B2B2B2;
-}
-.title-line02 {
-    font-family: "Roboto", font-weight: 700;
-    font-size: 38.5px;
-    color: #B2B2B2;
-}
-.title-line03 {
-    font-family: "Roboto";
-    font-size: 18.1px;
-    color: #575756;
-}
 h1 {
     font-family: "Roboto", font-weight: 700;
     font-size: 36px;
     color: #B2B2B2;
 }
-h2 {
+h2,
+.menu-wrapper {
     font-family: "Roboto";
-    font-size: 18.1px;
+    font-size: 24px;
     color: #AC162C;
 }
 p {
@@ -33,7 +27,33 @@ p {
     font-size: 16px;
     color: #575756;
 }
+.title-line01 {
+    font-family: "Roboto", font-weight: 700;
+    font-size: 51.5px;
+    color: #B2B2B2;
+}
+.title-line02 {
+    font-family: "Roboto", font-weight: 700;
+    font-size: 55.2px;
+    color: #B2B2B2;
+}
+.title-line03 {
+    font-family: "Roboto";
+    font-size: 26px;
+    color: #575756;
+}
+.date {
+    font-size: 42px;
+    padding-top: 300px;
+}
+
 /* Globe Illustration */
 .globe {
     
 }
+/* Title */
+.title {
+    margin: 0 auto;
+}
+
+
