@@ -1,0 +1,35 @@
+/* Landing Page Style */
+body {
+    background-color: rgb(237,237,237);
+}
+/* Typefaces Styles */
+.title-line01 {
+    font-family: "Roboto", font-weight: 700;
+    font-size: 36px;
+    color: #B2B2B2;
+}
+.title-line02 {
+    font-family: "Roboto", font-weight: 700;
+    font-size: 38.5px;
+    color: #B2B2B2;
+}
+.title-line03 {
+    font-family: "Roboto";
+    font-size: 18.1px;
+    color: #575756;
+}
+h1 {
+    font-family: "Roboto", font-weight: 700;
+    font-size: 36px;
+    color: #B2B2B2;
+}
+h2 {
+    font-family: "Roboto";
+    font-size: 18.1px;
+    color: #AC162C;
+}
+p {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #575756;
+}
