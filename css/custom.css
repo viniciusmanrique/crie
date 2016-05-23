@@ -7,8 +7,11 @@ body {
 .menu-wrapper li {
     display: inline-block;
     float: right;
-    margin-right: 20px;
+    padding-right: 20px;
     margin-top: 30px;
+}
+.menu-padding {
+     margin-right: 20px;
 }
 /* Typefaces Styles */
 h1 {
@@ -26,6 +29,7 @@ p {
     font-family: "Roboto";
     font-size: 16px;
     color: #575756;
+    padding: 40px 40px;
 }
 .title-line01 {
     font-family: "Roboto", font-weight: 700;
@@ -48,20 +52,21 @@ p {
 }
 .place {
     margin-top: 20px;
-    margin-bottom: 60px;    
+    padding-bottom: 20px;
 }
 .storyline {
     font-size: 19px;
-    line-height: 30px;
-    margin-bottom: 80px; 
+    line-height: 36px;
+    padding-bottom: 80px;
 }
 /* Globe Illustration */
 .globe {
-    
+
 }
 /* Title */
 .title {
     margin: 0 auto;
+
 }
 /* Frame */
 html:before,html:after,body:before,body:after{
@@ -95,6 +100,42 @@ body:after{
     bottom:0;
     left:0;
 }
-
-
-
+/* Buttons */
+.red-button {
+     color: #AC162C;
+     -webkit-transition-duration: 0.3s;
+     -moz-transition-duration: 0.3s;
+     transition-duration: 0.3s;
+}
+.red-button:hover {
+     color: #64090A;
+     text-decoration: none;
+}
+.red-button:focus,
+.red-button:active {
+     color: #AC162C;
+     text-decoration: none;
+}
+/* Bootstrap */
+@media (max-width: 768px) {
+     .globe {
+     	width: 300px;
+     }
+     .storyline {
+          font-size: 14px;
+          line-height: 24px;
+          padding: 20px;
+     }
+     html:before{
+         height:10px;
+     }
+     html:after{
+         width:10px;
+     }
+     body:before{
+         height:10px;
+     }
+     body:after{
+         width:10px;
+     }
+}
