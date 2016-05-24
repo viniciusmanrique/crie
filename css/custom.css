@@ -122,20 +122,20 @@ body:after{
      	width: 300px;
      }
      .storyline {
-          font-size: 14px;
+          font-size: 16px;
           line-height: 24px;
           padding: 20px;
      }
      html:before{
-         height:10px;
+         height:15px;
      }
      html:after{
-         width:10px;
+         width:15px;
      }
      body:before{
-         height:10px;
+         height:15px;
      }
      body:after{
-         width:10px;
+         width:15px;
      }
 }
