@@ -374,7 +374,7 @@ header{
         margin-left: 25px;
     }
     .section-title {
-        padding: 40px 0 40px 25px;
+        padding: 40px 0 40px 0;
     }
     p {
         font-family: "Roboto";
@@ -433,19 +433,102 @@ header{
     }
 }
 @media (max-width: 375px) {
-     .globe {
-     	width: 50%;
-        height: 60%;
-     }
-     .title-line01 {
-          font-size: 7vw;
-     }
-     .title-line02{
-          font-size: 7.6vw;
-          margin: 0 0 0 10px;
-     }
-     .title-line03 {
-     	  font-size: 3.1vw;
-          margin: 0 1px 0 0;
-     }
+    html:before{
+        height:15px;
+    }
+    html:after{
+        width:15px;
+    }
+    body:before{
+        height:15px;
+    }
+    body:after{
+        width:15px;
+    }
+    .globe {
+       width: 50%;
+       height: 60%;
+       padding-bottom: 10px;
+    }
+    .title-line01 {
+         font-size: 7vw;
+    }
+    .title-line02{
+         font-size: 7.6vw;
+         margin: 0 0 0 10px;
+    }
+    .title-line03 {
+         font-size: 3.1vw;
+         margin: 0 1px 0 0;
+    }
+    .date {
+        font-size: 30px;
+        margin-top: 60px;
+        font-weight: 300;
+        margin-left: 25px;
+    }
+    .place {
+        font-size: 18px;
+        margin-bottom: 60px;
+        font-weight: 300;
+        margin-left: 25px;
+    }
+    .section-title {
+        padding: 40px 0 40px 0;
+    }
+    p {
+        font-family: "Roboto";
+        -webkit-font-smoothing: antialiased;
+        font-size: 16px;
+        color: #575756;
+        padding: 40px 40px;
+    }
+    .storyline {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+        padding: 20px 40px 0px 40px;
+
+    }
+    .storyline-title {
+        font-size: 20px;
+        line-height: 26px;
+        padding: 20px 40px 0 40px;
+        font-weight: 700;
+    }
+    .program-link {
+        font-size: 20px;
+        padding-top: 0px;
+        margin-left: 10px;
+        margin-bottom: 60px;
+        font-weight: 300;
+    }
+    .program-link-wrapper {
+        margin: 20px 0 40px 30px;
+    }
+    .chair-caption {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        padding: 10px 0 10px 40px;
+    }
+    .speakers-row {
+        margin-left: 50px;
+    }
+    .speakers-name {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        margin-left: -45px;
+
+    }
+    .speakers-caption {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        margin-left: -45px;
+    }
 }
