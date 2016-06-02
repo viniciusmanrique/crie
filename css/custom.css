@@ -32,21 +32,24 @@ body:after{
 }
 /* Landing Page Style */
 body {
-    background-color: rgb(237,237,237);
+    background-color: #ededed;
 }
-/* Menu Nav
-.menu-wrapper ul,
-.menu-wrapper li {
-    display: inline-block;
-    padding: 10px 0 20px 0px;
+/* Buttons */
+.red-button {
+     color: #AC162C;
+     -webkit-transition-duration: 0.3s;
+     -moz-transition-duration: 0.3s;
+     transition-duration: 0.3s;
 }
-.menu-wrapper {
-     margin: 0 auto;
-     text-align: center;
+.red-button:hover {
+     color: #64090A;
+     text-decoration: none;
 }
-.menu-padding {
-     margin: 20px;
-}*/
+.red-button:focus,
+.red-button:active {
+     color: #AC162C;
+     text-decoration: none;
+}
 /* Typefaces Styles */
 h1 {
     font-family: "Roboto", font-weight: 700;
@@ -96,10 +99,22 @@ h3 {
     margin-top: 60px;
     font-weight: 300;
 }
+.section-title {
+    padding: 0 0 40px 0;
+}
 .place {
     margin-top: 20px;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
     font-weight: 300;
+}
+.program-link {
+    padding-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+    font-weight: 300;
+}
+.program-link-wrapper {
+    margin: 20px 0 40px 0;
 }
 p {
     font-family: "Roboto";
@@ -110,110 +125,32 @@ p {
 }
 .storyline {
     font-size: 19px;
-    line-height: 36px;
+    line-height: 30px;
     font-weight: 300;
-    padding: 20px 25px 80px 25px;
+    padding: 20px 25px 0px 25px;
 
 }
 .storyline-title {
     font-size: 24px;
     line-height: 30px;
-    padding: 0 25px 0 25px;
+    padding: 20px 25px 0 25px;
     font-weight: 700;
 }
-/* Globe Illustration */
-.globe-wrapper {
-     text-align: center;
-     margin-bottom: 20px;
-}
-.globe {
-     margin: 0 auto;
-     text-align: center;
-}
-/* Title */
-.title {
-    margin: 0 auto;
+.speakers-name {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 0 20px 0 20px;
+    font-weight: 700;
     text-align: center;
-    margin-top: -20px;
+    margin: 0 auto;
 }
-
-/* Buttons */
-.red-button {
-     color: #AC162C;
-     -webkit-transition-duration: 0.3s;
-     -moz-transition-duration: 0.3s;
-     transition-duration: 0.3s;
-}
-.red-button:hover {
-     color: #64090A;
-     text-decoration: none;
-}
-.red-button:focus,
-.red-button:active {
-     color: #AC162C;
-     text-decoration: none;
-}
-/* Bootstrap */
-/*
-@media (max-width: 1200px) {
-     .title {
-     	width: 90%;
-     }
-}
-@media (max-width: 992px) {
-     .title {
-     	width: 90%;
-     }
-}
-*/
-@media (max-width: 415px) {
-     .globe {
-     	width: 60%;
-          height: 90%;
-     }
-     .title-line01 {
-          font-size: 7vw;
-     }
-     .title-line02{
-          font-size: 7.5vw;
-          margin: 0 0 0 8px;
-     }
-     .title-line03 {
-     	font-size: 3.55vw;
-          margin: 0 0 0 2px;
-     }
-}
-@media (max-width: 768px) {
-     .globe {
-     	width: 60%;
-          width: 70%
-     }
-     .title-line01 {
-          font-size: 6vw;
-     }
-     .title-line02{
-          font-size: 6.42vw;
-     }
-     .title-line03 {
-     	font-size: 3vw;
-     }
-     .storyline {
-          font-size: 16px;
-          line-height: 24px;
-          padding: 20px;
-     }
-     html:before{
-         height:15px;
-     }
-     html:after{
-         width:15px;
-     }
-     body:before{
-         height:15px;
-     }
-     body:after{
-         width:15px;
-     }
+.speakers-caption {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
 }
 /* Hamburger Menu */
 body{
@@ -224,7 +161,7 @@ body{
 }
 header{
 	width:100%;
-	background: rgb(237,237,237);
+	background: #ededed;
 	height:50px;
 	line-height:50px;
 }
@@ -307,4 +244,107 @@ header{
   font-size:1.5em;
   margin-top:5px;
   margin:0 auto;
+}
+/* Globe Illustration */
+.globe-wrapper {
+     text-align: center;
+     margin-bottom: 20px;
+}
+.globe {
+     margin: 0 auto;
+     text-align: center;
+}
+/* Title */
+.title {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -20px;
+}
+/* Speakers Section */
+.speakers-row {
+    margin-left: -90px;
+}
+.speakers-row-margin-small {
+    margin-top: 20px;
+}
+.speakers-row-margin {
+    margin-top: 60px;
+}
+/* Contact Us Section */
+.chair-caption {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    padding: 10px 0 10px 25px;
+
+}
+/* Layout */
+.padding-bottom {
+    padding-bottom: 40px;
+}
+.padding-ending-page {
+    padding-bottom: 100px;
+}
+/* Bootstrap */
+/*
+@media (max-width: 1200px) {
+     .title {
+     	width: 90%;
+     }
+}
+@media (max-width: 992px) {
+     .title {
+     	width: 90%;
+     }
+}
+*/
+@media (max-width: 415px) {
+     .globe {
+     	width: 60%;
+          height: 90%;
+     }
+     .title-line01 {
+          font-size: 7vw;
+     }
+     .title-line02{
+          font-size: 7.5vw;
+          margin: 0 0 0 8px;
+     }
+     .title-line03 {
+     	font-size: 3.55vw;
+          margin: 0 0 0 2px;
+     }
+}
+@media (max-width: 768px) {
+     .globe {
+     	width: 60%;
+          width: 70%
+     }
+     .title-line01 {
+          font-size: 6vw;
+     }
+     .title-line02{
+          font-size: 6.42vw;
+     }
+     .title-line03 {
+     	font-size: 3vw;
+     }
+     .storyline {
+          font-size: 16px;
+          line-height: 24px;
+          padding: 20px;
+     }
+     html:before{
+         height:15px;
+     }
+     html:after{
+         width:15px;
+     }
+     body:before{
+         height:15px;
+     }
+     body:after{
+         width:15px;
+     }
 }

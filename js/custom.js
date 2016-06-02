@@ -14,4 +14,32 @@ $(document).ready(function() {
      $( ".hamburger" ).show();
      });
      });
+
+     $( ".speakers" ).click(function() {
+     $( ".menu" ).slideToggle( "slow", function() {
+     $( ".cross" ).hide();
+     $( ".hamburger" ).show();
+     });
+     });
+
+     $( ".program" ).click(function() {
+     $( ".menu" ).slideToggle( "slow", function() {
+     $( ".cross" ).hide();
+     $( ".hamburger" ).show();
+     });
+     });
+
+     $( ".registration" ).click(function() {
+     $( ".menu" ).slideToggle( "slow", function() {
+     $( ".cross" ).hide();
+     $( ".hamburger" ).show();
+     });
+     });
+
+     $( ".contact-us" ).click(function() {
+     $( ".menu" ).slideToggle( "slow", function() {
+     $( ".cross" ).hide();
+     $( ".hamburger" ).show();
+     });
+     });
 });
