@@ -99,22 +99,13 @@ h3 {
     margin-top: 60px;
     font-weight: 300;
 }
-.section-title {
-    padding: 0 0 40px 0;
-}
 .place {
     margin-top: 20px;
     margin-bottom: 60px;
     font-weight: 300;
 }
-.program-link {
-    padding-top: 0px;
-    margin-left: 10px;
-    margin-bottom: 60px;
-    font-weight: 300;
-}
-.program-link-wrapper {
-    margin: 20px 0 40px 0;
+.section-title {
+    padding: 40px 0 40px 0;
 }
 p {
     font-family: "Roboto";
@@ -124,8 +115,8 @@ p {
     padding: 40px 40px;
 }
 .storyline {
-    font-size: 19px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 28px;
     font-weight: 300;
     padding: 20px 25px 0px 25px;
 
@@ -137,12 +128,12 @@ p {
     font-weight: 700;
 }
 .speakers-name {
-    font-size: 24px;
-    line-height: 30px;
-    padding: 0 20px 0 20px;
+    font-size: 18px;
+    line-height: 24px;
     font-weight: 700;
+    letter-spacing: 0.05em;
     text-align: center;
-    margin: 0 auto;
+    padding: 0 20px 0 20px;
 }
 .speakers-caption {
     font-size: 14px;
@@ -150,7 +141,7 @@ p {
     font-weight: 300;
     letter-spacing: 0.05em;
     text-align: center;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 40px 10px;
 }
 /* Hamburger Menu */
 body{
@@ -267,8 +258,15 @@ header{
 .speakers-row-margin-small {
     margin-top: 20px;
 }
-.speakers-row-margin {
-    margin-top: 60px;
+/* Program Section */
+.program-link {
+    padding-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+    font-weight: 300;
+}
+.program-link-wrapper {
+    margin: 20px 0 40px 0;
 }
 /* Contact Us Section */
 .chair-caption {
@@ -299,52 +297,155 @@ header{
      }
 }
 */
+
+
+@media (max-width: 768px) {
+    html:before{
+        height:15px;
+    }
+    html:after{
+        width:15px;
+    }
+    body:before{
+        height:15px;
+    }
+    body:after{
+        width:15px;
+    }
+    .globe {
+       width: 60%;
+         width: 70%
+    }
+    .title-line01 {
+         font-size: 6vw;
+    }
+    .title-line02{
+         font-size: 6.42vw;
+    }
+    .title-line03 {
+       font-size: 3vw;
+    }
+    .storyline {
+         font-size: 16px;
+         line-height: 24px;
+         padding: 20px;
+    }
+
+}
 @media (max-width: 415px) {
+    html:before{
+        height:15px;
+    }
+    html:after{
+        width:15px;
+    }
+    body:before{
+        height:15px;
+    }
+    body:after{
+        width:15px;
+    }
+    .globe {
+       width: 60%;
+       height: 70%;
+       padding-bottom: 10px;
+    }
+    .title-line01 {
+         font-size: 7vw;
+    }
+    .title-line02{
+         font-size: 7.6vw;
+         margin: 0 0 0 10px;
+    }
+    .title-line03 {
+         font-size: 3.1vw;
+         margin: 0 1px 0 0;
+    }
+    .date {
+        font-size: 30px;
+        margin-top: 60px;
+        font-weight: 300;
+        margin-left: 25px;
+    }
+    .place {
+        font-size: 18px;
+        margin-bottom: 60px;
+        font-weight: 300;
+        margin-left: 25px;
+    }
+    .section-title {
+        padding: 40px 0 40px 25px;
+    }
+    p {
+        font-family: "Roboto";
+        -webkit-font-smoothing: antialiased;
+        font-size: 16px;
+        color: #575756;
+        padding: 40px 40px;
+    }
+    .storyline {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+        padding: 20px 40px 0px 40px;
+
+    }
+    .storyline-title {
+        font-size: 20px;
+        line-height: 26px;
+        padding: 20px 40px 0 40px;
+        font-weight: 700;
+    }
+    .program-link {
+        font-size: 20px;
+        padding-top: 0px;
+        margin-left: 10px;
+        margin-bottom: 60px;
+        font-weight: 300;
+    }
+    .program-link-wrapper {
+        margin: 20px 0 40px 30px;
+    }
+    .chair-caption {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        padding: 10px 0 10px 40px;
+    }
+    .speakers-row {
+        margin-left: 50px;
+    }
+    .speakers-name {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        margin-left: -45px;
+
+    }
+    .speakers-caption {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        margin-left: -45px;
+    }
+}
+@media (max-width: 375px) {
      .globe {
-     	width: 60%;
-          height: 90%;
+     	width: 50%;
+        height: 60%;
      }
      .title-line01 {
           font-size: 7vw;
      }
      .title-line02{
-          font-size: 7.5vw;
-          margin: 0 0 0 8px;
+          font-size: 7.6vw;
+          margin: 0 0 0 10px;
      }
      .title-line03 {
-     	font-size: 3.55vw;
-          margin: 0 0 0 2px;
-     }
-}
-@media (max-width: 768px) {
-     .globe {
-     	width: 60%;
-          width: 70%
-     }
-     .title-line01 {
-          font-size: 6vw;
-     }
-     .title-line02{
-          font-size: 6.42vw;
-     }
-     .title-line03 {
-     	font-size: 3vw;
-     }
-     .storyline {
-          font-size: 16px;
-          line-height: 24px;
-          padding: 20px;
-     }
-     html:before{
-         height:15px;
-     }
-     html:after{
-         width:15px;
-     }
-     body:before{
-         height:15px;
-     }
-     body:after{
-         width:15px;
+     	  font-size: 3.1vw;
+          margin: 0 1px 0 0;
      }
 }
