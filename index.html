@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Roboto Typeface -->
-        <link href='https://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,700' rel='stylesheet' type='text/css'>
         <!-- Place favicon.ico in the root directory -->
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Normalize makes browsers render all elements more consistently -->
@@ -21,43 +21,85 @@
         <link rel="stylesheet" href="css/custom.css">
         <!-- Modernizr Library -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!-- JQuery -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript">
+           $(document).ready(function() {
+                $( ".cross" ).hide();
+                $( ".menu" ).hide();
+                $( ".hamburger" ).click(function() {
+                $( ".menu" ).slideToggle( "slow", function() {
+                $( ".hamburger" ).hide();
+                $( ".cross" ).show();
+                });
+                });
+
+                $( ".cross" ).click(function() {
+                $( ".menu" ).slideToggle( "slow", function() {
+                $( ".cross" ).hide();
+                $( ".hamburger" ).show();
+                });
+                });
+            });
+       </script>
     </head>
     <body>
         <!-- Title -->
-        <div class="container">
-            <header>
-                <nav class="row menu-wrapper">
-                    <ul>
-                         <li class="red-button">About</li>
-                         <li class="red-button menu-padding">Schedule</li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                 <div class="globe-wrapper">
-                      <object type="image/svg+xml" data="svg/globe.svg" class="globe" width="420" height="420">
-                        Globe Logo - Internationalizing Higher Education <!-- fallback image in CSS -->
-                      </object>
-                 </div>
+        <header>
+             <div class="menu">
+                 <ul>
+                   <a href="#"><li>Speakers</li></a>
+                   <a href="#"><li>Program</li></a>
+                   <a href="#"><li>Registration</li></a>
+                   <a href="#"><li>Contact us</li></a>
+                 </ul>
+            </div>
 
-                <div class="title">
+             <button class="hamburger">&#9776;</button>
+             <button class="cross">&#735;</button>
+
+            <!-- <nav class="row menu-wrapper">
+                <ul>
+                     <li class="red-button menu-padding">Speakers</li>
+                     <li class="red-button menu-padding">Program</li>
+                     <li class="red-button menu-padding">Registration</li>
+                     <li class="red-button menu-padding">Contact us</li>
+                </ul>
+           </nav> -->
+        </header>
+        <div class="container">
+
+            <main>
+
+                <div class="globe-wrapper">
+                     <object type="image/svg+xml" data="svg/globe.svg" class="globe" width="380" height="380">
+                       Globe Logo - Internationalizing Higher Education <!-- fallback image in CSS -->
+                     </object>
+                </div>
+
+                <div class="row title">
                     <h1>
                         <span class="title-line01">INTERNATIONALIZING</span><br>
                         <span class="title-line02">HIGHER EDUCATION:</span><br>
                         <span class="title-line03">PAST PRACTICES AND FUTURE POSSIBILITIES</span>
                     </h1>
                 </div>
-                <h2>
-                    <span class="date col-md-6 col-md-offset-2">July 26 — 29, 2016</span><br>
-                    <span class="place col-md-6 col-md-offset-2">
+                <h2 class="row">
+                    <span class="date col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-2">July 26 — 29, 2016</span><br>
+                    <span class="place col-sm-8 col-sm-offset-1 col-md-6 col-md-offset-2">
                          <a href="https://goo.gl/maps/hbESWKh4bst" class="red-button" target="_blank">
                               Simon Fraser University<br>Vancouver Campus
                          <a/>
                     </span>
                 </h2>
-                <p class="storyline col-md-6 col-md-offset-3">
-                     The Centre for Research on International Education and the Faculty of Education at Simon Fraser University, Canada, invite you to participate in an international interdisciplinary conference focusing on internationalization of higher education.
-                </p>
+                <div class="row">
+                     <h3 class="storyline-title col-md-6 col-md-offset-3">
+                          A Conference celebrating Simon Fraser University's 50th Anniversary!
+                     </h3>
+                     <p class="storyline col-md-6 col-md-offset-3">
+                          The Centre for Research on International Education and the Faculty of Education at Simon Fraser University, Canada, invite you to participate in an international interdisciplinary conference focusing on internationalization of higher education.
+                     </p>
+                </div>
             </main>
             <footer>
             </footer>
