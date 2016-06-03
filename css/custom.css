@@ -451,18 +451,6 @@ header{
     }
 }
 @media (max-width: 375px) {
-    html:before{
-        height:15px;
-    }
-    html:after{
-        width:15px;
-    }
-    body:before{
-        height:15px;
-    }
-    body:after{
-        width:15px;
-    }
     .globe {
        width: 50%;
        height: 60%;
